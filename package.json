@@ -27,7 +27,7 @@
     "start": "cross-env NODE_ENV=production electron ./app/main.prod.js",
     "start-main-dev": "cross-env HOT=1 NODE_ENV=development electron ./app/main.dev.babel.js",
     "start-renderer-dev": "cross-env NODE_ENV=development webpack-dev-server --config configs/webpack.config.renderer.dev.babel.js",
-    "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 jest",
+    "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 jest --verbose",
     "test-all": "yarn lint && yarn build && yarn test && yarn build-e2e && yarn test-e2e",
     "test-e2e": "node -r @babel/register ./internals/scripts/CheckBuiltsExist.js && cross-env NODE_ENV=test testcafe electron:./ ./test/e2e/HomePage.e2e.ts",
     "test-e2e-live": "node -r @babel/register ./internals/scripts/CheckBuiltsExist.js && cross-env NODE_ENV=test testcafe-live electron:./ ./test/e2e/HomePage.e2e.ts",
@@ -158,7 +158,8 @@
     },
     "testRegex": "test/.*(spec|test).(ts|tsx|js)$",
     "setupFiles": [
-      "./internals/scripts/CheckBuiltsExist.js"
+      "./internals/scripts/CheckBuiltsExist.js",
+      "./app/setupTests.ts"
     ]
   },
   "devDependencies": {
@@ -185,12 +186,14 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.1.0",
     "@babel/register": "^7.0.0",
+    "@types/enzyme": "^3.9.3",
     "@types/jest": "^23.3.11",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
     "@types/react-redux": "^6.0.12",
     "@types/react-router": "^5.0.1",
     "@types/react-router-dom": "^4.3.1",
+    "@types/react-test-renderer": "^16.8.2",
     "@types/redux-logger": "^3.0.6",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
