@@ -1,0 +1,9 @@
+@import '../../app.global';
+
+div.sideSection {
+  background-color: $lt-side-navbg;
+  height: 100%;
+  max-width: 400px;
+  border-right: 3px solid $lt-side-navborder;
+  height: 100vh;
+}

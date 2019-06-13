@@ -1,0 +1,38 @@
+@import '../../../app.global';
+
+.sideMenu {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.sideMenu > li {
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+li.selected {
+  background-color: $lt-highlighted-tab;
+}
+
+.sideMenu > li:hover {
+  background-color: $lt-highlighted-tab;
+}
+
+.sideMenu > li > a {
+  display: table;
+  text-decoration: none;
+  color: $lt-font-dull-color;
+}
+
+.sideMenu > li > a > span {
+  padding-left: 8px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.sideMenu > li > a > img {
+  height: 32px;
+  width: 32px;
+}

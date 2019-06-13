@@ -1,0 +1,22 @@
+@import '../../../app.global';
+
+.brandDiv {
+  display: table;
+  text-decoration: none;
+  color: $lt-font-color;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+
+  & > img {
+    height: 36px;
+    width: 36px;
+  }
+
+  & > span {
+    padding-left: 8px;
+    display: table-cell;
+    font-weight: bold;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+}

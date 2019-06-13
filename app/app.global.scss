@@ -1,0 +1,233 @@
+$dark-btn-primary: #837dff;
+$dark-btn-primary-border: #262275;
+$dark-bg: #423a6c;
+$dark-side-navbg: #392f5d;
+$dark-font-color: #d2d0e6;
+$dark-font-dull-color: #7a75a8;
+$dark-active-lab: #837dff;
+$dark-inactive-lab: #7a75a8;
+$dark-highlighted-tab: #291950;
+$dark-card-bg: #494477;
+$dark-card-border: #45396d;
+$dark-hr-line: #565184;
+$dark-inactive-btn-border: #434075;
+$dark-btn-stop-bg: #dc5959;
+$dark-status-running: #4bbb4b;
+
+$lt-btn-primary: #5f72f2;
+$lt-btn-primary-hover: #495bd6;
+$lt-warn: #ffc107;
+$lt-control-btn-border: #eee;
+$lt-btn-primary-border: #c3ccfd;
+$lt-bg: #fcfcfc;
+$lt-side-navbg: #f4f5fb;
+$lt-font-color: #3b4a73;
+$lt-console: #222d4a;
+$lt-font-dull-color: #a5aec0;
+$lt-active-lab: #848cfb;
+$lt-inactive-lab: #a5aec0;
+$lt-highlighted-tab: #e3e7f3;
+$lt-card-bg: #fff;
+$lt-card-border: #f8f8f8;
+$lt-hr-line: #f8f9fb;
+$lt-inactive-btn-border: #e2e1f6;
+$lt-btn-stop-bg: #dc5959;
+$lt-status-running: #4bbb4b;
+$lt-side-navborder: #f4f2f9;
+$lt-table-bg: #fff;
+$lt-table-row-border: #f2f2f2;
+$lt-dim-icon: #eaecf5;
+$lt-btn-success: #2ce5c2;
+$lt-primary-outline-hover: #e9ecfb;
+$lt-failed-outline-hover: #ffeaea;
+
+div {
+  line-height: 1;
+}
+
+// *,
+// *::before,
+// *::after {
+// 	box-sizing: unset;
+// }
+
+.label {
+  color: $lt-font-dull-color;
+
+  label {
+    color: $lt-font-dull-color;
+  }
+}
+.antd-tooltip {
+  max-width: 250px !important;
+}
+
+:export {
+  ltfontdull: $lt-font-dull-color;
+  ltdimicon: $lt-dim-icon;
+  white: $lt-card-bg;
+  ltfontcolor: $lt-font-color;
+  ltbtncolor: $lt-btn-primary;
+}
+.ant-select-selection__rendered {
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ant-popover-placement-bottomLeft > .ant-popover-content > .ant-popover-arrow {
+  left: 11px !important;
+}
+.popoverInner1 {
+  div.ant-popover-inner {
+    margin-left: -65px !important;
+  }
+}
+.popoverInner2 {
+  div.ant-popover-inner {
+    margin-left: -105px !important;
+  }
+}
+.popoverInner3 {
+  div.ant-popover-inner {
+    margin-left: -145px !important;
+  }
+}
+.mainContainer {
+  padding: 0 20px;
+}
+
+button.baseBtn {
+  &:hover {
+    color: #5f72f2;
+    background-color: #fff;
+    border-color: #5f72f2;
+  }
+
+  &:focus {
+    color: #5f72f2;
+    background-color: #fff;
+    border-color: #5f72f2;
+  }
+}
+
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  color: $lt-font-dull-color;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+div.row {
+  margin-right: 0;
+}
+
+body {
+  background-color: $lt-bg;
+  margin: 0;
+  font-family: "Gudea", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+p.text {
+  color: $lt-font-dull-color;
+}
+
+p.textSelected {
+  color: $lt-btn-primary;
+}
+
+%base-button {
+  display: flex;
+  padding: 15px 20px;
+  color: #fff;
+  border: 2px solid $lt-btn-primary-border;
+  background-color: $lt-btn-primary;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+button.baseButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  min-width: 90px;
+  box-sizing: border-box;
+  font-family: "Gudea", sans-serif;
+  transition: all 0.4s;
+  justify-content: center;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    padding-right: 7px;
+  }
+}
+
+div.servicesWrapper {
+  display: flex;
+  align-items: flex-start;
+
+  & > div {
+    width: 100%;
+  }
+}
+.breadCrumb {
+  padding: 0 20px;
+  margin: 10px 0px;
+  font-size: 18px;
+}
+
+p.defaultHeading {
+  color: $lt-font-dull-color;
+}
+
+button.primaryBtn {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #fff;
+  // box-shadow: 0 1px 3px rgba(63, 81, 181, 0.55), 0 1px 2px;
+  border: none;
+  background-color: $lt-btn-primary;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+button.primaryBtn:hover {
+  background-color: #6c66de;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+button.antBtn {
+  background-color: $lt-btn-primary;
+}
+
+button.antBtnOutlined {
+  color: $lt-font-dull-color;
+
+  &:hover {
+    color: $lt-btn-primary;
+    border: 1px solid $lt-btn-primary;
+  }
+}
